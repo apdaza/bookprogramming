@@ -1,0 +1,179 @@
+\documentclass[12pt,twoside,titlepage]{book}
+\usepackage[spanish,activeacute]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[applemac]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{makeidx}
+\usepackage{listings}
+\usepackage{colortbl}
+\usepackage[dvips]{graphics}
+\usepackage[dvips]{graphicx}
+\usepackage{hyperref}
+\usepackage{fancybox}
+\usepackage{pstricks}
+\usepackage[papersize={170mm,240mm},lmargin=22mm, rmargin=22mm,top=20mm,bottom=20mm]{geometry}
+
+%\setlength{\voffset}{-15 mm}
+%\setlength{\hoffset}{-5 mm}
+%\setlength{\topmargin}{5 mm}
+%\setlength{\textwidth}{120 mm}
+%\setlength{\textheight}{200 cm}
+%\setlength{\headheight}{6 mm}
+%\setlength{\headsep}{9 mm}
+%\setlength{\footskip}{10 mm}
+%\setlength{\oddsidemargin}{5 mm}
+%\setlength{\evensidemargin}{5 mm}
+%\setlength{\marginparwidth}{20 mm}
+%\setlength{\marginparsep}{2 mm}
+
+
+\fancyhead{}
+\fancyhf{}
+\fancyhead[CO]{\tiny \textit \rightmark}
+\fancyhead[CE]{\tiny \textit \leftmark}
+\fancyfoot{}	
+\fancyfoot[C]{\tiny \textit Programaci—n B‡sica}
+\fancyfoot[LO,RE]{\tiny \textit \thepage}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5} 
+\makeindex
+
+\renewcommand{\tablename}{Tabla}
+
+
+\begin{document}
+
+\renewcommand{\figurename }{Gr‡fica}
+\renewcommand{\listtablename}{Indice de Tablas}
+\renewcommand{\listfigurename} {Indice de Gr‡ficas}
+\renewcommand{\bibname}{Bibliograf’a}
+\renewcommand{\lstlistingname}{Programa}
+\renewcommand{\lstlistlistingname}{Indice de Programas}
+\renewcommand{\arraystretch}{1.3}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+\definecolor{light-gray}{gray}{0.95}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{white}{rgb}{1,1,1}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{acvd}{rgb}{0.1,0.2,0.3}
+
+\newcounter{ejercicio}
+\newcommand{\ejercicio}{\stepcounter{ejercicio}{\bf Ejercicio \theejercicio. }}
+\newcounter{csu}
+\newcommand{\csu}{\stepcounter{csu}{\bf Caso de Uso \thecsu. }}
+
+\lstdefinelanguage{Pseint}
+{morekeywords={Escribir,Leer,Proceso,FinProceso,Definir,Entero,Real,Caracter,
+Como, Numero, Numerico,Logico, Texto,Cadena,Dimension,Para, Hasta, Hacer, FinPara, Si, Entonces, SiNo, FinSi, MOD,Borrar, Pantalla, Esperar, Tecla, Segun, Hacer, De, Otro, Modo,FinSegun,Mientras, FinMientras,Repetir, Hasta,Que, Verdadero, Falso, Limpiar, SIN, SALTAR},
+sensitive=false,
+morecomment=[l]{//},
+morecomment=[s]{/*}{*/},
+morestring=[b]",
+morestring=[d]'
+}
+
+\lstloadlanguages{ C, C++, Java, Python,Pseint}
+
+\lstset{
+  literate={0}{$0$}{1}
+               {1}{$1$}{1}
+               {2}{$2$}{1}
+               {3}{$3$}{1}
+               {4}{$4$}{1}
+               {5}{$5$}{1}
+               {6}{$6$}{1}
+               {7}{$7$}{1}
+               {8}{$8$}{1}
+               {9}{$9$}{1}
+               %{‡}{a}{1}%
+			      %{Ž}{e}{1}%
+			   	 %{’}{i}{1}%
+			   	 %{—}{o}{1}%
+			   	 %{œ}{u}{1}%    
+               %{–}{n}{1}
+               {\%}{\%}{2}       
+               {\#}{\#}{1}  
+               {\$}{\$}{1},        
+numbers=left, 
+basicstyle=\scriptsize, 
+fontadjust=true, 
+commentstyle=\tiny, 
+framexleftmargin=5mm, 
+frame=lines, 
+rulesepcolor=\color{blue}, 
+breaklines=true, 
+breakindent=0pt,
+numberstyle=\tiny\color{blue},
+%backgroundcolor=\color{light-gray}, 
+numbersep=3pt,
+tabsize=2, 
+captionpos=b,
+numberbychapter= true,  
+showspaces= false, 
+showstringspaces=false,
+emph={sqrt, rand, RC, TRUNC, input, cout, cin,string, String, Scanner, System,in, out,println, java, util,next,nextInt,charAt,srand, AZAR, time, abs,  ABS, Math,currentTimeMillis	, Random, random, randint, range, false, true, No, Y, endl, include, iostream, using, namespace}, 
+emphstyle={\textit\textbf\color{blue}},
+emph={[2]+, =, -, ^, &, |, /, < ,>,\%, }, 
+emphstyle={[2]\textit\textbf\color{red}},
+stringstyle=\ttfamily,
+keywordstyle=\color{blue},          % keyword style
+commentstyle=\color{dkgreen},       % comment style
+stringstyle=\color{mauve},         % string literal style
+%aboveskip=0pt,
+%belowskip=0pt,
+%texcl=true, 
+%extendedchars=\true, 
+%mathescape=true, 
+}
+
+\title{
+{ \huge Programaci—n B‡sica}\\
+{\huge Gu’a pr‡ctica} 
+}
+\author{autor 1 \\ {\bf M.Eng Ingenier’a de Sistemas y Computaci—n} \\
+        autor 2 \\ {\bf M.Eng Ingenier’a de Sistemas y Computaci—n} \\
+        autor 3 \\ {\bf M.Eng Ingenier’a de Sistemas y Computaci—n}
+ }
+ 
+%\setcounter{page}{3}
+\pagestyle{empty}
+\newpage
+\maketitle
+%\layout
+
+
+\noindent 
+
+\frontmatter
+    \pagestyle{empty}
+    %\include{portada}
+    \setcounter{page}{5}
+	\pagestyle{fancy}
+	\tableofcontents
+	\listoftables
+	\listoffigures
+	\lstlistoflistings
+	%\include{presentacion}	
+	%\include{prefacio}
+
+\mainmatter
+	\noindent 
+	\include{variables}
+    \include{decision}
+	\include{iteracion}
+	\include{metodos}
+	\include{estructurasDatos}
+	\include{archivos}
+\backmatter
+   \nocite{*}
+	\bibliographystyle{unsrt}
+%	\include{psint}
+%	\include{lenguajeC}
+%	\include{lenguajeJava}
+%	\include{python}
+   \bibliography{programacion}
+	\printindex
+\end{document}

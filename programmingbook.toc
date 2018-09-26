@@ -1,0 +1,16 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}Variables y Operadores}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Variables}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Operadores}{6}{section.1.2}
+\contentsline {chapter}{\numberline {2}Estructura de Decisi\'on}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}Estructura Si-No}{15}{section.2.1}
+\contentsline {section}{\numberline {2.2}Estructura de selecci\'on}{24}{section.2.2}
+\contentsline {chapter}{\numberline {3}Estructuras de Iteraci'on}{33}{chapter.3}
+\contentsline {section}{\numberline {3.1}Iteraci\'on}{33}{section.3.1}
+\contentsline {chapter}{\numberline {4}M\'etodos}{53}{chapter.4}
+\contentsline {section}{\numberline {4.1}M\'etodos Iterativos}{53}{section.4.1}
+\contentsline {section}{\numberline {4.2}M\'etodos Recursivos}{65}{section.4.2}
+\contentsline {chapter}{\numberline {5}Estructuras de Datos}{79}{chapter.5}
+\contentsline {section}{\numberline {5.1}Arreglos}{79}{section.5.1}
+\contentsline {section}{\numberline {5.2}Matrices}{89}{section.5.2}
+\contentsline {chapter}{\numberline {6}Manejo de Archivos}{105}{chapter.6}

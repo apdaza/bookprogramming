@@ -1,0 +1,179 @@
+\chapter{Manejo de Archivos}\label{cap:archivos}
+
+%=======================================================================================
+%=======================================================================================
+\paragraph*{\ejercicio}  \par %ejercicio 091
+El Junquillo Chino\\
+
+El siguiente problema esta basado en el problema del junquillo chino hallado en el capitulo IX del libro chino: "Chu Chang Suan Shu" o "Arte Matem‡tico en Nueve Secciones".\\
+
+Un grajero chino se encontraba mirando un lago circular del cual salia exactamente en el centro una porci—n de un junquillo, este junquillo nac’a exactamente en el centro del fondo del lago, el granjero observ— que cuando el viento soplaba el junquillo se inclinaba sin deformarse y al tocar la orilla del lago quedaba exactamente cubierto por el agua. Escribe un programa que le ayude al granjero a determinar la profundidad del lago. \\
+ 
+Entrada\\
+
+La enterada consiste en mœltiples l’neas de un archivo en la que cada un par de enteros separados por un espacio con 0 < i < 10000 y 0 < j < 100 donde i indica el di‡metro del lago en metros y j determina la porci—n visible del junquillo en cent’metros. La entrada termina con una l’nea con un par de ceros.\\
+
+Salida\\
+
+Para cada l’nea de entrada, el programa debe generar la salida redondeada a un decimal de la profundidad del lago en metros.\\
+
+
+Ejemplo de entrada:\\
+3  30\\
+10 20\\
+5 25\\
+0 0\\
+
+Ejemplo de salida:\\
+3,6\\
+62,4\\
+12,4\\
+
+%lenguaje python
+\lstinputlisting[language=Python, caption={Lenguaje Python $\Longleftarrow$ Ejercicio \theejercicio}, label={\theejercicio d}]{ejercicios/python/ejercicio091.py}
+%=======================================================================================
+%=======================================================================================
+\paragraph*{\ejercicio}  \par %ejercicio 092
+Escribir un programa que lea de un archivo una lista de palabras y cuente cuantas veces aparece cada palabra en el texto
+%pseudo-c—digo
+%\lstinputlisting[language=Pseint, caption={Pseudo-c—digo $\Longleftarrow$ Ejercicio \theejercicio}, label={\theejercicio a}]{ejercicios/ejercicio008/ejercicio008.psc}
+
+
+%Lenguaje C
+%\lstinputlisting[language=C, caption={Lenguaje C $\Longleftarrow$ Ejercicio \theejercicio}, label={\theejercicio b}]{ejercicios/c++/ejercicio008.cpp}
+
+%Lenguaje java
+%\lstinputlisting[language=Java, caption={Lenguaje Java $\Longleftarrow$ Ejercicio \theejercicio}, label={\theejercicio c}]{ejercicios/java/src/variablesOperadores/ejercicio008.java}
+
+%lenguaje python
+\lstinputlisting[language=Python, caption={Lenguaje Python $\Longleftarrow$ Ejercicio \theejercicio}, label={\theejercicio d}]{ejercicios/python/ejercicio092.py}
+
+
+%=======================================================================================
+%=======================================================================================
+\paragraph*{\ejercicio}  \par %ejercicio 093
+Escribir un programa que lea de un archivo una matriz de nœmeros enteros de dimensiones n x n y genere un archivo que contenga la matriz transpuesta de la matriz original
+
+%lenguaje python
+\lstinputlisting[language=Python, caption={Lenguaje Python $\Longleftarrow$ Ejercicio \theejercicio}, label={\theejercicio d}]{ejercicios/python/ejercicio093.py}
+%=======================================================================================
+%=======================================================================================
+
+%=======================================================================================
+%=======================================================================================
+\paragraph*{\ejercicio}  \par %ejercicio 094
+Escribir un archivo que capture por entrada est‡ndar una serie de nœmeros enteros que debe finalizar con un cero y escriba un archivo en donde genere por cada nœmero capturado una l’nea en la que escriba el nœmero y las veces que fue capturado separados por un espacio en blanco
+
+%lenguaje python
+\lstinputlisting[language=Python, caption={Lenguaje Python $\Longleftarrow$ Ejercicio \theejercicio}, label={\theejercicio d}]{ejercicios/python/ejercicio094.py}
+%=======================================================================================
+%=======================================================================================
+
+%=======================================================================================
+%=======================================================================================
+\paragraph*{\ejercicio}  \par %ejercicio 095
+Una pareja de recien casados compraron un carro y no pueden decidir a donde iran de paseo en estas vacaciones, para decirlo han escrito todos los nombres de los posibles destinos a visitar en un archivo, ayude a la pareja a decidir que destino visitar generando un archivo de tal manera que se asocie a cada lugar un valor entero aleatorio entre 1 y 100 de tal manera que el que tenga el mayor nœmero asociado sera el destino a elegir por la pareja
+
+%lenguaje python
+\lstinputlisting[language=Python, caption={Lenguaje Python $\Longleftarrow$ Ejercicio \theejercicio}, label={\theejercicio d}]{ejercicios/python/ejercicio095.py}
+%=======================================================================================
+%=======================================================================================
+
+%=======================================================================================
+%=======================================================================================
+\paragraph*{\ejercicio}  \par %ejercicio 096
+En un archivo de texto se encuentran emparejadas un sarie de palabras de tal manera que la primera consiste en una palabra secreta que un usuario trataba de adivinar y la segunda una serie de letras que el usuario emitio tratando de adivinar la palabra secreta, escribe un programa que le indique al usuario el nœmero de no coincidencias entre las dos palabras
+
+Entrada\\
+
+La enterada consiste en mœltiples l’neas en la que cada una contiene un par de cadenas de caracteres separados por un espacio en la que la primera palabra es la palabra secreta y la segunda la palabra del usuario.\\
+
+Salida\\
+
+Para cada l’nea de entrada, el programa debe generar la salida en la que muestre al usuario las dos palabras y en frente y separado por un espacio el nœmero de no coincidencias de las dos palabras.
+
+
+Ejemplo de entrada:\\
+casa kza\\
+ferrocarril ferocail\\
+misa lisa\\
+
+Ejemplo de salida:\\
+casa kza 2\\
+ferrocarril ferocail 0\\
+misa lisa 1\\
+
+%lenguaje python
+\lstinputlisting[language=Python, caption={Lenguaje Python $\Longleftarrow$ Ejercicio \theejercicio}, label={\theejercicio d}]{ejercicios/python/ejercicio096.py}
+%=======================================================================================
+%=======================================================================================
+
+%=======================================================================================
+%=======================================================================================
+\paragraph*{\ejercicio}  \par %ejercicio 097
+Un archivo de texto que se debe enviar por correo electr—nico contiene informaci—n sencible que no conviene que sea le’da por alguien diferente a su destinatario, para garantizar esto, el que env’o el archivo codific— este corriendo cada caracter a 4 posiciones hacia adelante en el alfabeto, ayude al lector escribiendo un programa que regrese cada carcater 4 posiciones hacia a tras en el alfabeto de manera que lo pueda leer, el alfabeto no contiene car‡cteres especiales como "–" o "ll" y todo est‡ escrito en minœscula.
+
+Ejemplo de entrada:\\
+ir pe gewe hi nyere iw pe jmiwxe\\
+
+Ejemplo de salida:\\
+en la casa de juana es la fiesta\\
+
+%lenguaje python
+\lstinputlisting[language=Python, caption={Lenguaje Python $\Longleftarrow$ Ejercicio \theejercicio}, label={\theejercicio d}]{ejercicios/python/ejercicio096.py}
+%=======================================================================================
+%=======================================================================================
+
+%=======================================================================================
+%=======================================================================================
+\paragraph*{\ejercicio}  \par %ejercicio 098
+Escriba un programa que lea desde un archivo la cantidad de soldados que tendr‡n dos ejercitos para cada una de las batallas que librar‡n, el programa debe decir quien tiene mayor probabilidad de ganar cada batalla en base a la cantidad de soldados que tienen, el procesamiento se detiene cuando uno de los dos archivos tiene 0 soldados para lo cual el programa debe generar como salidad la palabra "rendicion"
+
+Ejemplo de entrada:\\
+12 2\\
+5 20\\
+10 0\\
+
+Ejemplo de salida:\\
+gana el 12\\
+gana el 20\\
+rendicion\\
+
+%=======================================================================================
+%=======================================================================================
+
+%=======================================================================================
+%=======================================================================================
+\paragraph*{\ejercicio}  \par %ejercicio 099
+Escribir un programa que lea desde un archivo una serie de resultados de partidos de beisbol en los que se enfrentaron varios equipos en un torneo todos contra todos, cada entrada consiste en una l’nea que contiene cuantas carreras anot— el local luego sepados por un espacio el nombre del equipo local luego separado por un espacio el nombre del visitante y por œltimo y separado por un espacio las carreras que anot— el visitante y en base a estos resultados determine el ganador del torneo
+
+Ejemplo de entrada:\\
+cardenales 10 5 magallanes\\
+cardenales 8 7 tigres\\
+cardenales 10 4 leones\\
+leones 4 2 tigres\\
+leones 2 1 magallanes\\
+leones 1 2 cardenales\\
+tigres 4 2 leones\\
+tigres 3 2 magallanes\\
+tigres 1 2 cardenales\\
+magallanes 5 2 tigres\\
+magallanes 3 2 leones\\
+magallanes 6 8 cardenales\\
+
+Ejemplo de salida:\\
+gana cardenales\\
+%=======================================================================================
+%=======================================================================================
+
+%=======================================================================================
+%=======================================================================================
+\paragraph*{\ejercicio}  \par %ejercicio 100
+Un nœmero feo es todo entero positivo cuyos œnicos factores primos son 2, 3 y 5, es decir se pueden escribir como 2aú3bú5c con a,b,c enteros positivos o nulos. Los primeros nœmeros feos son:
+
+ 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 24
+ 
+Escribir un programa que genere un archivo con los nœmeros feos existentes en un rango que se capture desde la entrada est‡ndar.
+
+%=======================================================================================
+%=======================================================================================
